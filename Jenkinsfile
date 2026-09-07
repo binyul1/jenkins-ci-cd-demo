@@ -3,7 +3,7 @@ pipeline {
  
     environment {
         IMAGE_NAME = "binyul1/jenkins-ci-cd-demo"
-        VERSION = "v{env.BUILD_NUMBER}"
+        VERSION = "v${env.BUILD_NUMBER}"
         }
     
     stages{
