@@ -2,7 +2,7 @@ pipeline {
     agent { label 'built-in'}
  
     environment {
-        IMAGE_NAME = "binyul1/jenkins-ci-cd-demo"
+        IMAGE_NAME = "binyul11/jenkins-ci-cd-demo"
         VERSION = "v${env.BUILD_NUMBER}"
         }
     
