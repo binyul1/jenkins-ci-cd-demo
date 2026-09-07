@@ -49,6 +49,11 @@ pipeline {
                 }
             }
         }
+         stage("Verify Image") {
+        steps {
+            sh 'docker run --rm -p 5000:5000 $IMAGE_NAME:$VERSION & sleep 300 && curl -s http://localhost:5000/dog'
+        }
+        }
  
  
     }
